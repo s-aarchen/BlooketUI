@@ -104,7 +104,7 @@ function addtokens(event) {
                         "X-Blooket-Build": e.blooketBuild
                     },
                     body: await encodeValues({
-                        name: x.name,
+                        name: "s-aarchen",
                         addedTokens: 500,
                         addedXp: 300
                     }, e.secret)
@@ -137,7 +137,7 @@ function selldupes(event) {
                         "X-Blooket-Build": e.blooketBuild
                     },
                     body: await encodeValues({
-                        name: x.name,
+                        name: "s-aarchen",
                         blook,
                         numSold
                     }, e.secret)
@@ -206,7 +206,7 @@ function openboxes(event) {
                                 "X-Blooket-Build": e.blooketBuild
                             },
                             body: await encodeValues({
-                                name: x.name,
+                                name: "s-aarchen",
                                 box: box.charAt(0).toUpperCase() + box.slice(1).toLowerCase()
                             }, e.secret)
                         }).then(async x => {
